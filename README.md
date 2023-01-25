@@ -1,8 +1,11 @@
 # Convolution Neural Network
 
 ## Why use CNN instead of Deep Neural Network for Image recognition? 
+
 **Parameter Explosion**: In Fully Connected Deep Neural Network, each and every node of one layer is connected to each and every node of its preceding or following layer. This connection happens through the use of weights and possibly bias too. Therefore, for a large image - say 100 x 100 pixel - the zeroth layer (input layer) will have 10K nodes. The interconnection between this layer will be of the order O(10K x 10K = 100M). Thus, Dense Fully Connected NNs require massive computational power. Using CNN results in requiring dramatically fewer parameters - creating sparse NNs- to train and attain similar or better performance. 
+
 **Location Invariance**: When we feed an image in 2D to the Fully Connected Layer, it has to be flattened into a column matrix. That means such layers do not provide feature extraction with location invariance. A puppy at the top left corner in one image might not be identified when it is in the bottom right of another image. CNN addresses this spatial weakness of the Deep NN. 
+
 **Visual Stimulus of Eye**: CNNs are modeled on how our eye perceives an image. Our eye perceives visual stimulus in a 2D visual field called Local Receptive Field. Eye then sends this 2D image to the visual cortex that lies in our brain and is responsible for interpreting the image. It also adds depth perception. CNN is designed to interpret the image and add depth perception using the layers of the CNN. Individual layers of CNN focus on a small field at a time. DNNs are not good at extracting such features despite their much larger computational requirement. 
 
 
